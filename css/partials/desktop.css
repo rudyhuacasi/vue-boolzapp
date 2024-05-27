@@ -1,0 +1,134 @@
+@media screen and (min-width: 992px){
+    /*layout*/
+    body{
+        background-color: #d9dbd5;
+    }
+    header{
+        background-color: #049688;
+        height: 75px;
+    }    
+    .container{
+        width: 80%;
+        height: 90%;
+        margin: -40px auto;
+    }
+    .sidebar{
+        width: 350px;    
+    }
+    .notification{
+        background-color: #8fdafc;
+    }
+    .search{
+        background-color: #fafafa;
+    }
+    .chat{
+        background-color: #ffffff;
+        overflow-y: auto;
+        height: 100%;
+    }
+    .persone{
+        list-style-type: none;
+    }
+    /*content*/
+    .bor{
+        justify-content: space-between;
+    }
+    .avatar-io{
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .avatar-io,
+    .mar-10{
+        margin: 0 10px;
+        color: #b1b1b1;
+    }
+    .notification,
+    .search{
+        display: flex;
+    }
+    .avatar-1{
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .dis-f{
+        display: flex;
+        width: 60%;
+    }
+    .mar-l-15{
+        margin-left: 15px;
+    }
+    .mar-7{
+        margin: 7px 0;
+    }
+    .lor-sil{
+        font-size: 15px;
+        color: #b1b1b1;
+    }
+    .notification{
+        align-items: center;
+        padding: 1rem;
+        height: 86px;
+    }
+    .fa-bell-slash{
+        background-color: white;
+        border-radius: 50%;
+        width: 16%;
+        height: 50px;
+        font-size: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: #8fdafc;
+    }
+    .search{
+        padding: 1rem;
+
+    }
+    .fa-magnifying-glass{
+        padding: 10px 15px 10px 10px;
+    }
+    .inizia{
+        width: 90%;
+        padding: 0.5rem;
+        font-size: 15px;
+        border: silver;
+    }
+    .ini-chart{
+        position: absolute;
+        left: 28px;
+        top: 27px;
+        color: rgb(167, 167, 167);
+    }
+    .silver{
+        color: #597f8d;
+    }
+    .dis-flex{
+        display: flex;
+        align-items: center;
+        border: 0;
+        justify-content: flex-start;
+        padding: 1rem 1.5rem;
+        height: 90px;
+    }
+    .flex-0{
+        flex: 0 0;
+    }
+    .avatar-2{
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .ligthsilver{
+        color: #b6b9bb;
+    }
+    .dis-n{
+        display: block;
+    }
+    .flex-1{
+        flex: 1 1;
+    }
+    .dis-spa{
+        display: flex;
+        justify-content: space-between;
+    }
+}

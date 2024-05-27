@@ -1,0 +1,121 @@
+/*mobile first*/
+/*mobile layout*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    display: none;
+}
+.content{
+    background-color: silver;
+    flex-grow: 1;
+} 
+.head{
+    background-color: #eaeaea;
+    padding: 0.5rem;
+}
+.message{
+    background-color: #f3eeeb;
+    height: 75px;
+}
+.conversation{
+    background-image: url(/img/mine.jpg);
+    background-position: center;
+    height: calc(100% - 150px);
+}
+/*mobile content*/
+/*head*/
+.avatar-1{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 10px;
+    aspect-ratio: 1/1;
+}
+.dis-f{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.mar-l-15{
+    margin-left: 15px;
+}
+.mar-7{
+    margin: 7px 0;
+}
+.lor-sil{
+    font-size: 15px;
+    color: #b1b1b1;
+}
+.mar-10{
+    margin: 0 10px;
+    color: #b1b1b1;
+}
+.ber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*conversation*/
+.conversation{
+    padding: 2rem 1rem;
+}
+.message-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.square{
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    margin: 10px 0;
+}
+.green{
+    background-color: #d4f9bb;
+}
+.white{
+    background-color: white;
+}
+.fa-chevron-down{
+    color: silver;
+}
+.info-messaggi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+}
+.message{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrivi{
+    width: 100%;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.fa-face-smile,
+.fa-microphone{
+    display: none;
+}

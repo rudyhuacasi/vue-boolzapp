@@ -1,0 +1,89 @@
+/*tablet*/
+@media screen and (min-width: 576px){
+    /*layout*/
+    .notification,
+    .search{
+        display: none;
+    }
+    .sidebar{
+        width: 10%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .conversation{
+        overflow-y: scroll;
+    }
+    /*content*/
+    .bor{
+        border-right: 2px solid silver;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .avatar-2,
+    .avatar-io{
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+    }
+    .avatar-3{
+        height: 75px;
+        border-bottom: 1px solid #b1b1b1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dis-n{
+        display: none;
+    }
+    .avatar-1{
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+    }
+    .dis-f{
+        display: flex;
+        width: 60%;
+    }
+    .mar-l-15{
+        margin-left: 15px;
+    }
+    .mar-7{
+        margin: 7px 0;
+    }
+    .lor-sil{
+        font-size: 15px;
+        color: #b1b1b1;
+    }
+    .mar-10{
+        margin: 0 10px;
+        color: #b1b1b1;
+    }
+    .square{
+        width: 60%;
+    }
+    .message{
+        text-align: center;
+        padding: 0;
+    }
+    .scrivi{
+        width: 80%;
+    }
+    .fa-face-smile,
+    .fa-microphone{
+        display: block;
+        width: 10%;
+        font-size: 25px;
+        color: #6b7376;
+    }
+}
