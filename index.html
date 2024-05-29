@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <header></header>
     <main>
         <div id="app" class="container">
             <div class="sidebar">
@@ -31,6 +32,7 @@
                         <a class="silver" href="#">Attiva notifiche desktop</a>
                     </div>
                 </div>
+                <!-- cercatore del chat-->
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                     <input class="inizia" type="text" v-model="cercando" placeholder="Cerca o inizia una nuova chat" autocomplete="off">                
@@ -50,12 +52,13 @@
                     </div>
                 </div>
             </div>
+            <!-- conversazione -->
             <div class="content">
                 <div class="head bar ber">
                     <div class="dis-f">
-                        <img class="mar-l-10 avatar-1" src="/img/avatar_1.jpg" alt="avatar_1">
+                        <img class="mar-l-10 avatar-1" :src="contacts[activeContactIndex].avatar" alt="avatar_1">
                         <div>
-                            <p class="mar-7">Michele</p>
+                            <p class="mar-7">{{ contacts[activeContactIndex].name }}</p>
                             <p class="lor-sil">Ultimo accesso alle 16:26</p>
                         </div>
                         
@@ -68,7 +71,7 @@
                 </div>
                 <div class="conversation" v-if="activeContactIndex !== null">
                     <div v-for="(message, index) in contacts[activeContactIndex].messages" :key="index">
-                        <!-- Mensaje enviado -->
+                        <!-- messaggio inviato -->
                         <div v-if="message.status === 'sent'" class="message-right">
                             <div class="square green">
                                 <p>{{ message.message }}</p>
@@ -78,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Mensaje recibido -->
+                        <!-- messagio ricevuto-->
                         <div v-else class="message-left">
                             <div class="square white">
                                 <p>{{ message.message }}</p>

@@ -171,7 +171,7 @@ const { createApp } = Vue
                     
                 }
             ],
-            activeContactIndex: null,
+            activeContactIndex: 0,
             newMessage: '',
            
         }    
