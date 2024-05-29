@@ -30,13 +30,14 @@ main{
 }
 .message{
     background-color: #f3eeeb;
-    height: 75px;
+    height: 79px;
 }
 .conversation{
     background-image: url(/img/mine.jpg);
     background-position: center;
     height: calc(100% - 150px);
 }
+
 /*mobile content*/
 /*head*/
 .avatar-1{
@@ -82,9 +83,10 @@ main{
 .square{
     width: 80%;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 10px;
     display: flex;
     margin: 10px 0;
+    justify-content: space-between;
 }
 .green{
     background-color: #d4f9bb;
@@ -99,7 +101,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin: 0 5px;
 }
 .message{
@@ -118,4 +120,15 @@ main{
 .fa-face-smile,
 .fa-microphone{
     display: none;
+}
+.utente{
+    background-color: lightgreen;
+}
+.interlocutore{
+    background-color: white;
+}
+select,
+option{
+    font-size: 15px;
+    border: none;
 }
